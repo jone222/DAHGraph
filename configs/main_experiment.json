@@ -1,0 +1,22 @@
+{
+  "model": "DAHGraph_FullV1",
+  "graph_encoder": "RelationAdaptiveHGTEncoder",
+  "use_signed_hgt": false,
+  "hidden_dim": 512,
+  "num_layers": 3,
+  "num_heads": 4,
+  "num_bases": 4,
+  "dropout": 0.1,
+  "batch_size": 1024,
+  "optimizer": "AdamW",
+  "learning_rate": 0.00005,
+  "weight_decay": 0.0001,
+  "max_epochs": 200,
+  "early_stopping_patience": 15,
+  "selection_metric": "validation_macro_f1",
+  "seeds": [1, 42, 815, 1203, 2026],
+  "label_map": {
+    "potentially_beneficial": 0,
+    "potentially_harmful": 1
+  }
+}
